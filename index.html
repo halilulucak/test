@@ -1,0 +1,83 @@
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+ <script src="jquery.min.js"></script>
+</head>
+<body>
+<style>
+#form-control{
+	width:80%;
+	margin:10px;
+	padding:10px;
+	font-size:25px;
+	outline:;
+}
+</style>
+	
+			<form id="Form" action="#" class="agile_form" method="post">
+				
+				
+			</form>
+			
+			
+	
+
+    <script>
+        $( function() {
+		
+		
+			
+			$('<input>').attr({
+			   type:'text',
+			   id:'form-control',
+			   name:'bar',
+			   placeholder:'Adınız',
+		   }).appendTo('#Form');
+		   
+		   $('<textarea/>').attr({
+			   type:'text',
+			   id:'form-control',
+			   name:'bar',
+			   placeholder:'Adınız',
+		   }).appendTo('#Form');
+		   
+		   $('<input>').attr({
+			   type:'text',
+			   id:'form-control',
+			   name:'bar',
+			   placeholder:'Adınız',
+		   }).appendTo('#Form');
+		   
+		   $('<input>').attr({
+			   type:'text',
+			   id:'form-control',
+			   name:'bar',
+			   placeholder:'Adınız',
+		   }).appendTo('#Form');
+			
+			$('<select>').attr(
+				{
+				   type:'text',
+				   id:'form-control',
+				   class:'selecto',
+				   name:'bar',
+				   placeholder:'Adınız',
+				}
+			).appendTo('#Form');
+			
+			$('<option>').text("Test 1").appendTo('.selecto');
+			$('<option>').text("Test 2").attr({ selected:'selected', value:'boş', required:'required'}).appendTo('.selecto');
+
+			$('<option>').text("Test 3").appendTo('.selecto');
+			
+			
+        });
+		
+		
+
+		</script>
+
+
+	</body>
+</html>
